@@ -1,14 +1,56 @@
-.popup {
-	display: none;
-}
-
 .popup{
+	opacity: 0;
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	z-index: -10;
+	transition: ease-in-out .5s;
+}
+.popup.active{
+	opacity: 1;
+	z-index: 10;
+}
+
+.add_elevator{
+	width: 426px;
+	height: 69px;
+	background: #C4C4C4;
+	border-radius: 2px;
+	color: #FFFFFF;
+}
+
+
+.elevators__info__form{
+	max-width: 426px;
+	margin: 0 auto;
+}
+.wrap__form__bg {
+	padding: 25px 25px 50px;
+	max-width: 426px;
+	border-radius: 2px;
+	margin: 25px auto;
+	flex-direction: column;
+	text-align: center;
+	background: #C4C4C4;
+}
+
+.wrap__form__bg input{
+	max-width: 260px;
+	width: 100%;
+	height: 40px;
+	padding-left: 15px;
+}
+
+.wrap__form__bg label{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .popup::before{
@@ -21,6 +63,7 @@
 
 
 .wrap__elevator__form {
+	width: 100%;
 	position: relative;
 	text-align: center;
 	transition: ease-in .3s;
@@ -43,4 +86,14 @@
 	font-size: 24px;
 	line-height: 29px;
 	color: #FFFFFF;
+}
+
+.close__popup {
+	position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 38px;
+    color: #FFFFFF;
+    transform: rotate(45deg);
+    cursor: pointer;
 }

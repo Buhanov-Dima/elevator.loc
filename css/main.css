@@ -5,39 +5,6 @@ a, p, h1, h2, h3, button, span {margin: 0; line-height: 1; color: #ffffff;}
 .flex-align-center { align-items: center; }
 .pdg-0 {padding: 0;}
 
-.add_elevator{
-	width: 426px;
-	height: 69px;
-	background: #C4C4C4;
-	border-radius: 2px;
-	color: #FFFFFF;
-}
-
-
-.elevators__info__form{
-	max-width: 426px;
-	margin: 0 auto;
-}
-.wrap__form__bg {
-	padding: 25px 25px 50px;
-	max-width: 426px;
-	border-radius: 2px;
-	margin: 25px auto;
-	flex-direction: column;
-	text-align: center;
-	background: #C4C4C4;
-}
-
-.wrap__form__bg input{
-	max-width: 260px;
-	width: 100%;
-	margin: auto;
-	height: 40px;
-	margin-bottom: 15px;
-	margin-left: 20px;
-	padding-left: 15px;
-}
-
 .navbar-brand {
 	display: flex;
 	align-items: center;
@@ -71,6 +38,12 @@ a, p, h1, h2, h3, button, span {margin: 0; line-height: 1; color: #ffffff;}
 	background: #FFFFFF;
 	border-radius: 4px;
 	border: none;
+}
+
+.main__block__1{
+	background: url('../img/content/bg-1.jpg') no-repeat center;
+	height: calc(100vh - 128px);
+	background-size: cover;
 }
 	
 .type_elevators {

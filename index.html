@@ -142,19 +142,20 @@
 		</div>
 		<form action="" method="post" class="elevators__info__form">
 			<div class="wrap__form__bg d-flex">
+				<label for="elevator__name">
+					<span>Наименование</span>
+					<input type="text" name="elevator__name" id="elevator__name" class="elevators__name" placeholder="Производитель лифта">
+				</label>
 				<label for="subunit__1">
 					<span>Узел 1</span>
-					<input type="text" name="subunit" id="subunit__1" class="elevators__item" placeholder="Введите название узла">
-				</label>
-				<label for="subunit__2">
-					<span>Узел 2</span>
-					<input type="text" name="subunit" id="subunit__2" class="elevators__item" placeholder="Введите название узла">
+					<input type="text" name="subunit[]" id="subunit__1" class="elevators__item" placeholder="Введите название узла">
 				</label>
 			</div>
 			<a href="#" class="add__elevator__item">Добавить ещё один узел</a>
-			<button class="send__form">отправить</button>
+			<button type="submit" class="send__form">отправить</button>
 		</form>
 	</div>
+	<div class="close__popup">+</div>
 </div>
 
 <footer>
