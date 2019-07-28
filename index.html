@@ -6,10 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/monitoring.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
     <link rel="stylesheet" href="css/popup.css">
     <title>Document</title>
 </head>
@@ -30,7 +33,7 @@
 	        <a class="nav-link" href="#">Лифты</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Мониторинг оборудования</a>
+	        <a id="monitor" class="nav-link" href="#">Мониторинг оборудования</a>
 	      </li>
 	    </ul>
 
@@ -122,6 +125,12 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="d-none monitoring">
+				<div class="wrap__monitoring">
+					<canvas id="myChart" width="600" height="500"></canvas>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -164,6 +173,7 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
