@@ -23,6 +23,10 @@ $( document ).ready(function() {
 		findEl.toggleClass('active');
 	});
 
+	$('.wrap__elevator__info').click(function(){
+		$('.col-lg').removeClass('d-none');
+	});
+
 	$('.send__form').click(function(e){
 		e.preventDefault();
 		var nodeId = [];

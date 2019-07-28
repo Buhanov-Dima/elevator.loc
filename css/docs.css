@@ -1,0 +1,58 @@
+.wrap__documentation {
+	background-color: #ffffff;
+	height: 100%;
+	padding: 55px 35px 0;
+}
+
+.doc__input {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.doc__input input{ 
+	width: 209px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #9E9E9E;
+	box-sizing: border-box;
+	border-radius: 2px;	
+	margin-bottom: 50px;
+	padding-left: 15px;
+}
+
+.doc__input label{
+	min-width: 190px;
+}
+.doc__input_2 {
+	display: flex;
+	flex-direction: column;
+}
+.doc__input_2 input{
+	margin-bottom: 10px;
+}
+
+.doc__input > div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.documentation__btn{
+	width: 80%;
+	margin: 60px auto 30px;
+}
+
+.doc__send{
+    max-width: 210px;
+    width: 100%;
+    padding: 10px 0;
+    background: #0069A2;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+

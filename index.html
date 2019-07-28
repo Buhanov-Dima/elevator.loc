@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/popup.css">
     <title>Document</title>
 </head>
@@ -48,7 +49,7 @@
 <section class="main__block__1">
 	<div class="container-fluid pdg-0">
 		<div class="row no-gutters">
-			<div class="col">
+			<div class="col custom-w">
 				<div class="sidebar">
 					<div class="wrap__elevator__info">
 						<a href="#" data-elevaator="OTIS_1" class="elevator__info__h">OTIS 1 <span>2 года</span></a>
@@ -80,51 +81,50 @@
 					<button class="add__elevator__popup">+</button>
 				</div>
 			</div>
-			<div class="col-lg-7">
-				<div class="documentation">
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- form for elevators> 
-<section>
-	<div class="container">
-		<div class="row">
-			<button class="btn add_elevator mx-auto">Добавить лифт</button>
-			<div class="col-lg-12 mx-auto">
-				<div class="wrap__elevator__form">
-					<div class="type_elevators">
-						<span>Тип лифта</span>
-						<select name="" id="type_of_elevator">
-							<option value="">Пассажирский</option>
-							<option value="">Грузовой</option>
-							<option value="">Универсальный</option>
-						</select>
+			<div class="col-lg d-none">
+				<div class="wrap__documentation">
+					<div class="documentation__name">
+						<h1>Документация <span>OTIS</span></h1>
 					</div>
-					<form action="" method="post" class="elevators__info__form">
-						<div class="wrap__form__bg d-flex">
-							<label for="subunit__1">
-								<span>Узел 1</span>
-								<input type="text" name="subunit" id="subunit__1" class="elevators__item" placeholder="Введите название узла">
-							</label>
-							<label for="subunit__2">
-								<span>Узел 2</span>
-								<input type="text" name="subunit" id="subunit__2" class="elevators__item" placeholder="Введите название узла">
-							</label>
+					<form action="" class="documentation__form d-flex justify-content-around">
+						<div class="doc__input w-40">
+							<div>
+								<label for="">Подрядчик</label>
+								<input type="text" name="" class="" placeholder="ОАО ЛИФТМОНТАЖ">
+							</div>
+							<div>
+								<label for="">Вид обслуживания</label>
+								<input type="text" name="" class="" placeholder="ТО 2">
+							</div>
 						</div>
-						<a href="#" class="add__elevator__item">Добавить ещё один узел</a>
-						<button class="send__form">отправить</button>
+						
+						<div class="doc__input w-40">
+							<div>
+								<label for="">Адрес</label>
+								<input type="text" name="" class="" placeholder="г. Москва ул. Прянишникова д.7 корп. 9">
+							</div>
+							<div class="d-flex">
+								<label for="">Вид работ</label>
+								<div class="doc__input_2">
+									<input type="text" name="" class="" placeholder="Ремонт 1">
+									<input type="text" name="" class="" placeholder="Ремонт 2">
+									<input type="text" name="" class="" placeholder="Ремонт 3">
+								</div>
+							</div>
+						</div>
 					</form>
+					<div class="documentation__btn d-flex justify-content-between w-80">
+						<button class="doc__send">Сохранить</button>
+						<div class="download__doc">
+							<a href="#"><img src="img/doc.svg" alt="скачать DOC"></a>
+							<a href="#"><img src="img/pdf.svg" alt="скачать PDF"></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
--->
 
 
 <div class="popup">
@@ -144,11 +144,11 @@
 			<div class="wrap__form__bg d-flex">
 				<label for="elevator__name">
 					<span>Наименование</span>
-					<input type="text" name="elevator__name" id="elevator__name" class="elevators__name" placeholder="Производитель лифта">
+					<input type="text" name="elevator__name" id="elevator__name" class="elevators__name" placeholder="Производитель лифта" required>
 				</label>
 				<label for="subunit__1">
 					<span>Узел 1</span>
-					<input type="text" name="subunit[]" id="subunit__1" class="elevators__item" placeholder="Введите название узла">
+					<input type="text" name="subunit[]" id="subunit__1" class="elevators__item" placeholder="Введите название узла" required>
 				</label>
 			</div>
 			<a href="#" class="add__elevator__item">Добавить ещё один узел</a>
